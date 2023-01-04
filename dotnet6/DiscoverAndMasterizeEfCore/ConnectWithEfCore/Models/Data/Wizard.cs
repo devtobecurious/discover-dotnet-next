@@ -4,6 +4,6 @@
     {
         public int Id { get; set; }
 
-        public Wand FavoriteWand { get; set; }
+        public ICollection<Wand> Wands { get; set; }
     }
 }
