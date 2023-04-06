@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using dotnet.discover.efcore.web.ui.Models;
 
@@ -10,9 +11,11 @@ using dotnet.discover.efcore.web.ui.Models;
 namespace dotnet.discover.efcore.web.ui.Migrations
 {
     [DbContext(typeof(DefaultDbContext))]
-    partial class DefaultDbContextModelSnapshot : ModelSnapshot
+    [Migration("20230406143301_WookieWithParentClass")]
+    partial class WookieWithParentClass
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -34,28 +37,6 @@ namespace dotnet.discover.efcore.web.ui.Migrations
                     b.HasIndex("WookiesId");
 
                     b.ToTable("WeaponWookie");
-                });
-
-            modelBuilder.Entity("dotnet.discover.efcore.web.ui.Models.Jedi", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<string>("Surname")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("WeaponId")
-                        .HasColumnType("int");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("WeaponId");
-
-                    b.ToTable("Jedis");
                 });
 
             modelBuilder.Entity("dotnet.discover.efcore.web.ui.Models.Weapon", b =>
@@ -126,17 +107,6 @@ namespace dotnet.discover.efcore.web.ui.Migrations
                         .HasForeignKey("WookiesId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-                });
-
-            modelBuilder.Entity("dotnet.discover.efcore.web.ui.Models.Jedi", b =>
-                {
-                    b.HasOne("dotnet.discover.efcore.web.ui.Models.Weapon", "Weapon")
-                        .WithMany()
-                        .HasForeignKey("WeaponId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Weapon");
                 });
 #pragma warning restore 612, 618
         }

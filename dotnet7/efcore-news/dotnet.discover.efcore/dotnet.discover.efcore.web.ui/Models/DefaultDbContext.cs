@@ -21,6 +21,7 @@ namespace dotnet.discover.efcore.web.ui.Models
 			modelBuilder.ApplyConfiguration(new WeaponEntityTypeConfiguration());
 		}
 
+        public DbSet<Jedi> Jedis { get; set; }
         public DbSet<Wookie> Wookies { get; set; }
         public DbSet<Weapon> Weapons { get; set; }
         public DbSet<LightSaber> LightSabers { get; set; }

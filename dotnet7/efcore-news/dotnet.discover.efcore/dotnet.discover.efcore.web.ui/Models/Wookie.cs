@@ -1,10 +1,7 @@
 ﻿namespace dotnet.discover.efcore.web.ui.Models
 {
-	public class Wookie
+	public class Wookie : Person
 	{
-        public int Id { get; set; }
-        public string Surname { get; set; }
-
         public ICollection<Weapon> Weapons { get; set; }
     }
 }
