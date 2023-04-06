@@ -1,7 +1,15 @@
+using dotnet.discover.efcore.web.ui.Models;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
+
+builder.Services.AddDbContext<DefaultDbContext>(options =>
+{
+	options.UseSqlServer(builder.Configuration.GetConnectionString("efcore.test"));
+});
 
 var app = builder.Build();
 
