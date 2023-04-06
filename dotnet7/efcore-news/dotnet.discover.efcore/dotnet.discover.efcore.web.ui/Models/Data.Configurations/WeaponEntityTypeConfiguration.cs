@@ -7,7 +7,7 @@ namespace dotnet.discover.efcore.web.ui.Models.Data.Configurations
 	{
 		public void Configure(EntityTypeBuilder<Weapon> builder)
 		{
-			throw new NotImplementedException();
+			builder.ToTable("Weapons");
 		}
 	}
 }

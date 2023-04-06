@@ -23,5 +23,6 @@ namespace dotnet.discover.efcore.web.ui.Models
 
         public DbSet<Wookie> Wookies { get; set; }
         public DbSet<Weapon> Weapons { get; set; }
+        public DbSet<LightSaber> LightSabers { get; set; }
     }
 }
