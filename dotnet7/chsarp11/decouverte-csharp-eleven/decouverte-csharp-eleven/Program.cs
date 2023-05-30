@@ -33,4 +33,4 @@ bool VerifMessage(string message)
 }
 
 var resultSaisie = Console.ReadLine();
-Console.WriteLine(VerifMessage(resultSaisie));
+Console.WriteLine(VerifMessage(resultSaisie!));
