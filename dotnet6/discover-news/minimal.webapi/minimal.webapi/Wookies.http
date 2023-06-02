@@ -1,0 +1,14 @@
+@hostname=localhost
+@post=44335
+@url=https://{{hostname}}:{{post}}/wookies
+
+###
+GET {{url}}
+
+###
+POST {{url}}
+Content-Type: application/json
+
+{
+    "name": "coucou"
+}
