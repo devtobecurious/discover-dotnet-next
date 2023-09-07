@@ -1,0 +1,29 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div>
+    <label>Arme : </label>
+    <div><select asp-items="this.Model.Weapons.Select(item => new SelectListItem() { Text = item.Label })"></select></div>
+</div>
+
+<table class="table">
+    <tbody>
+        @foreach (var item in this.Model.Wookies)
+        {
+            <tr>
+                <td>
+                    @item.Surname
+                </td>
+                <td>
+                    @foreach (var weapon in item.Weapons)
+                    {
+                        <i>@weapon.Label</i><br/>
+                    }
+                </td>
+            </tr>
+        }        
+    </tbody>
+</table>
