@@ -13,6 +13,8 @@
 
         public string Name { get; set; } = name;
 
+        public Position2D Position { get; set; } = new(0, 0);
+
         public IEnumerable<int> MaxPositions => [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
     }
 
