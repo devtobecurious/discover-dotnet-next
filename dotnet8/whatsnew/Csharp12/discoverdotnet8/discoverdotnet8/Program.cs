@@ -36,3 +36,4 @@ Console.WriteLine("nb : {0}", Wookiee.nb);
 
 
 var MoveWookie = (Wookiee wook, int x = 0, int y = 0) => wook.Position = new(x, y);
+
