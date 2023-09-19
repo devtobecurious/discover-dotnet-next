@@ -1,6 +1,5 @@
 ﻿
 using decouverte_csharp_eleven;
-using System.Net.WebSockets;
 
 Position2D pos = new(1, 2);
 Position2D pos2 = new(1, 2);
@@ -34,3 +33,5 @@ bool VerifMessage(string message)
 
 var resultSaisie = Console.ReadLine();
 Console.WriteLine(VerifMessage(resultSaisie!));
+
+string namr = nameof(resultSaisie);
