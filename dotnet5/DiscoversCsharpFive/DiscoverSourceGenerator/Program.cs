@@ -1,11 +1,14 @@
-﻿namespace ConsoleApp;
+﻿using DiscoverSourceGenerator;
 
-partial class Program
+namespace ConsoleApp
 {
-    static void Main(string[] args)
+    public static partial class Program
     {
-        HelloFrom("Generated Code");
-    }
+        static void Main(string[] args)
+        {
+            Wookiee wookiee = new();
 
-    static partial void HelloFrom(string name);
+            wookiee.Crier();
+        }
+    }
 }
