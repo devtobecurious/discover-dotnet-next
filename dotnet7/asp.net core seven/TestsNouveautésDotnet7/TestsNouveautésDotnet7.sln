@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WithControllers", "WithCont
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RateLimiters", "RateLimiters\RateLimiters.csproj", "{0C32503D-4A2C-4123-912B-F3DDDA0CD378}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FromServiceTests", "FromServiceTests\FromServiceTests.csproj", "{74A790B5-939F-468E-97F7-202AA964004C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{0C32503D-4A2C-4123-912B-F3DDDA0CD378}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0C32503D-4A2C-4123-912B-F3DDDA0CD378}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0C32503D-4A2C-4123-912B-F3DDDA0CD378}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74A790B5-939F-468E-97F7-202AA964004C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74A790B5-939F-468E-97F7-202AA964004C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74A790B5-939F-468E-97F7-202AA964004C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74A790B5-939F-468E-97F7-202AA964004C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
