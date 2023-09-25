@@ -1,0 +1,6 @@
+@DiscoverAspnetDotnetHeight_HostAddress = http://localhost:5207
+
+GET {{DiscoverAspnetDotnetHeight_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
