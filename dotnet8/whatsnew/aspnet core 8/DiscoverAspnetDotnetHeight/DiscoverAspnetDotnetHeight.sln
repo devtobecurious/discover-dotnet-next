@@ -5,6 +5,10 @@ VisualStudioVersion = 17.7.34031.279
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiscoverAspnetDotnetHeight", "DiscoverAspnetDotnetHeight\DiscoverAspnetDotnetHeight.csproj", "{E0D2D67E-82B2-46DF-AE05-005E9B204BA0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestAOT", "TestAOT\TestAOT.csproj", "{3EE76F94-E0D0-4FCE-B9F1-099BD69763EF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestAOTBis", "TestAOTBis\TestAOTBis.csproj", "{C5C2531C-59A6-4B2D-9004-ACE651FA0C8F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{E0D2D67E-82B2-46DF-AE05-005E9B204BA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E0D2D67E-82B2-46DF-AE05-005E9B204BA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E0D2D67E-82B2-46DF-AE05-005E9B204BA0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3EE76F94-E0D0-4FCE-B9F1-099BD69763EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3EE76F94-E0D0-4FCE-B9F1-099BD69763EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3EE76F94-E0D0-4FCE-B9F1-099BD69763EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3EE76F94-E0D0-4FCE-B9F1-099BD69763EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5C2531C-59A6-4B2D-9004-ACE651FA0C8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5C2531C-59A6-4B2D-9004-ACE651FA0C8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5C2531C-59A6-4B2D-9004-ACE651FA0C8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5C2531C-59A6-4B2D-9004-ACE651FA0C8F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
