@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestAOT", "TestAOT\TestAOT.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestAOTBis", "TestAOTBis\TestAOTBis.csproj", "{C5C2531C-59A6-4B2D-9004-ACE651FA0C8F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiscoverMapIdentityApi", "..\DiscoverMapIdentityApi\DiscoverMapIdentityApi.csproj", "{3BA29803-2F64-491A-A535-6BD195408965}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DiscoverMapIdentityApi", "..\DiscoverMapIdentityApi\DiscoverMapIdentityApi.csproj", "{3BA29803-2F64-491A-A535-6BD195408965}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmptyBuilderDiscover", "..\EmptyBuilderDiscover\EmptyBuilderDiscover.csproj", "{CF69F494-2C6C-4925-9BC0-EC0FFD618E03}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{3BA29803-2F64-491A-A535-6BD195408965}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3BA29803-2F64-491A-A535-6BD195408965}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3BA29803-2F64-491A-A535-6BD195408965}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF69F494-2C6C-4925-9BC0-EC0FFD618E03}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF69F494-2C6C-4925-9BC0-EC0FFD618E03}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF69F494-2C6C-4925-9BC0-EC0FFD618E03}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF69F494-2C6C-4925-9BC0-EC0FFD618E03}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
