@@ -3,11 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34031.279
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiscoverAspnetDotnetHeight", "DiscoverAspnetDotnetHeight\DiscoverAspnetDotnetHeight.csproj", "{E0D2D67E-82B2-46DF-AE05-005E9B204BA0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DiscoverAspnetDotnetHeight", "DiscoverAspnetDotnetHeight\DiscoverAspnetDotnetHeight.csproj", "{E0D2D67E-82B2-46DF-AE05-005E9B204BA0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestAOT", "TestAOT\TestAOT.csproj", "{3EE76F94-E0D0-4FCE-B9F1-099BD69763EF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestAOT", "TestAOT\TestAOT.csproj", "{3EE76F94-E0D0-4FCE-B9F1-099BD69763EF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestAOTBis", "TestAOTBis\TestAOTBis.csproj", "{C5C2531C-59A6-4B2D-9004-ACE651FA0C8F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestAOTBis", "TestAOTBis\TestAOTBis.csproj", "{C5C2531C-59A6-4B2D-9004-ACE651FA0C8F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiscoverMapIdentityApi", "..\DiscoverMapIdentityApi\DiscoverMapIdentityApi.csproj", "{3BA29803-2F64-491A-A535-6BD195408965}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{C5C2531C-59A6-4B2D-9004-ACE651FA0C8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C5C2531C-59A6-4B2D-9004-ACE651FA0C8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C5C2531C-59A6-4B2D-9004-ACE651FA0C8F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3BA29803-2F64-491A-A535-6BD195408965}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3BA29803-2F64-491A-A535-6BD195408965}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3BA29803-2F64-491A-A535-6BD195408965}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3BA29803-2F64-491A-A535-6BD195408965}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

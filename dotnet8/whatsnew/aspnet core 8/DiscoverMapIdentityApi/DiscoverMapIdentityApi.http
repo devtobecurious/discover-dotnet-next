@@ -1,0 +1,6 @@
+@DiscoverMapIdentityApi_HostAddress = http://localhost:5279
+
+GET {{DiscoverMapIdentityApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
