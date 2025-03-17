@@ -13,6 +13,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DiscoverMapIdentityApi", ".
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmptyBuilderDiscover", "..\EmptyBuilderDiscover\EmptyBuilderDiscover.csproj", "{CF69F494-2C6C-4925-9BC0-EC0FFD618E03}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "nullables", "nullables", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NullablesExamples", "NullablesExamples\NullablesExamples.csproj", "{C0EFDD53-B125-48DD-AD37-10EFD3AED025}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,9 +43,16 @@ Global
 		{CF69F494-2C6C-4925-9BC0-EC0FFD618E03}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CF69F494-2C6C-4925-9BC0-EC0FFD618E03}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CF69F494-2C6C-4925-9BC0-EC0FFD618E03}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0EFDD53-B125-48DD-AD37-10EFD3AED025}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0EFDD53-B125-48DD-AD37-10EFD3AED025}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0EFDD53-B125-48DD-AD37-10EFD3AED025}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0EFDD53-B125-48DD-AD37-10EFD3AED025}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C0EFDD53-B125-48DD-AD37-10EFD3AED025} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {CC4350C0-0998-446D-853A-C75FBA08F378}
