@@ -46,3 +46,24 @@ decimal ComputeDiscount(Order order) => order switch
 	{ Items: > 5, Price: > 300 } => 0.3m,
 	_ => 0m
 };
+
+int[] numbers = { 1, 2, 3 };
+var result = numbers is { Length: 3 } ? "The array has 3 elements" : "The array does not have 3 elements";
+
+if (numbers is [var first, _, _])
+{
+	Console.WriteLine(first);
+}
+else
+{
+	Console.WriteLine("The array does not have 3 elements");
+}
+
+
+void DTectMessage(string message)
+{
+	var result = message is ['a' or 'A', .. var s, 'a' or 'A']
+		? $"Message {message} matches; inner part is {s}."
+		: $"Message {message} doesn't match.";
+	Console.WriteLine(result);
+}
