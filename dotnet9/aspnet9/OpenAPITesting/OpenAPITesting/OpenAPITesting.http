@@ -1,0 +1,6 @@
+@OpenAPITesting_HostAddress = http://localhost:5152
+
+GET {{OpenAPITesting_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
