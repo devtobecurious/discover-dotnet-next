@@ -1,37 +1,18 @@
-using Microsoft.OpenApi.Models;
-
-using Scalar.AspNetCore;
-
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
-builder.Services.AddOpenApi(options =>
-{
-	options.AddDocumentTransformer((document, context, ct) =>
-	{
-		//document.Components.Schemas.Add("DateTime", new OpenApiSchema
-		//{
-		//	Type = "string",
-		//	Format = "date-time"
-		//});
-
-		return Task.CompletedTask;
-	});
-});
+builder.Services.AddOpenApi();
 
 var app = builder.Build();
 
-app.MapOpenApi();
+// Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
-	app.MapScalarApiReference(options =>
+	app.MapOpenApi();
+	app.UseSwaggerUI(options =>
 	{
-		options.AddHeadContent("<title>My API V1</title>");
-		options.WithTitle("My API V1");
-		options.WithTheme(ScalarTheme.Saturn);
-		options.WithDefaultHttpClient(ScalarTarget.CSharp, ScalarClient.HttpClient);
-		options.WithDarkMode(true);
+		options.SwaggerEndpoint("/openapi/v1.json", "My API V1");
 	});
 }
 
@@ -54,14 +35,7 @@ app.MapGet("/weatherforecast", () =>
 		.ToArray();
 	return forecast;
 })
-.WithName("GetWeatherForecast")
-.WithSummary("Get forecast")
-.Produces<WeatherForecast[]>();
-
-app.MapGet("/todos", async () =>
-{
-	return TypedResults.Ok(new DateTime());
-});
+.WithName("GetWeatherForecast");
 
 app.Run();
 
