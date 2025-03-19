@@ -1,0 +1,10 @@
+@NewFeatures_HostAddress = https://localhost:7026
+
+GET {{NewFeatures_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
+
+GET {{NewFeatures_HostAddress}}/produce-error
+
+###
